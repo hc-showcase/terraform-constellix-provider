@@ -17,7 +17,7 @@ resource "constellix_a_record" "firstrecord" {
   ttl           = 100
   name          = "firstrecord"
   type          = "A"
-  note cc       = "First record"
+  note          = "First record"
   roundrobin {
     value        = "5.45.25.35"
     disable_flag = "false"
