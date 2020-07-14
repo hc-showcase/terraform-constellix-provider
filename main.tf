@@ -7,10 +7,10 @@ provider "constellix" {
   insecure  = false
 }
 
-data "constellix_domain" "domain1" {
+data "constellix_domain" "domain" {
   name = "msk.pub"
 }
 
 output "domain" {
-  value = data.constellix_domain.domain1
+  value = data.constellix_domain.domain
 }
